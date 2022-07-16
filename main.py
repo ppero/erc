@@ -160,7 +160,7 @@ def processFile(update,bot,message,file,thread=None,jdb=None):
     else:
         client = processUploadFiles(file,file_size,[file],update,bot,message,jdb=jdb)
         file_upload_count = 1
-    bot.editMessageText(message,' ➲ Subida completada ✧ ')
+    bot.editMessageText(message,'➲ Preparando archivo ⎙')
     evidname = ''
     files = []
     if client:
