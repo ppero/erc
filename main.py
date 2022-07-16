@@ -108,7 +108,7 @@ def processUploadFiles(filename,filesize,files,update,bot,message,thread=None,jd
                     except:pass
                 return draftlist
             else:
-                bot.editMessageText(message,'➲ Error ✗')
+                bot.editMessageText(message,'➲ Error al subir ✗')
         elif cloudtype == 'cloud':
             tokenize = False
             if user_info['tokenize']!=0:
