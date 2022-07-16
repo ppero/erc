@@ -476,7 +476,7 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '👋 Hola {NAME} soy un bot público puedo subir a cualquier nube , también puedo descargar ⎙ archivos de ➫ Mega , ➫ Google Drive , ➫ YouTube , ➫ Link directo\n'
+            start_msg = '👋 Hola soy un bot público puedo subir a cualquier nube , también puedo descargar ⎙ archivos de ➫ Mega , ➫ Google Drive , ➫ YouTube , ➫ Link directo\n'
             bot.editMessageText(message,start_msg)
         elif '/files' == msgText and user_info['cloudtype']=='moodle':
              proxy = ProxyCloud.parse(user_info['proxy'])
