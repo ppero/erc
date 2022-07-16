@@ -91,11 +91,11 @@ def createFinishUploading(filename,filesize,split_size,current,count,findex):
 def createFileMsg(filename,files):
     import urllib
     if len(files)>0:
-        msg= '<b>➥ Enlaces ⋐⋑</b>\n'
+        msg= '<b>───────•◈•───────</b>\n'
         for f in files:
             url = urllib.parse.unquote(f['directurl'],encoding='utf-8', errors='replace')
-            #msg+= '<a href="'+f['url']+'"> ➥ ' + f['name'] + ' ⋐⋑ </a>'
-            msg+= "<a href='"+url+"'>➥"+f['name']+'⋐⋑</a>\n'
+            #msg+= '<a href="'+f['url']+'"> ➲ ' + f['name'] + '  </a>'
+            msg+= "<a href='"+url+"'> ➲ "+f['name']+'</a>\n'
         return msg
     return ''
 
