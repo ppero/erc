@@ -108,7 +108,7 @@ def processUploadFiles(filename,filesize,files,update,bot,message,thread=None,jd
                     except:pass
                 return draftlist
             else:
-                bot.editMessageText(message,'➲ Error En La Pagina ✗')
+                bot.editMessageText(message,'➲ Error ✗')
         elif cloudtype == 'cloud':
             tokenize = False
             if user_info['tokenize']!=0:
@@ -325,7 +325,7 @@ def onmessage(update,bot:ObigramClient):
                    getUser['zips'] = size
                    jdb.save_data_user(username,getUser)
                    jdb.save()
-                   msg = '➥ Genial los zips seran de '+ sizeof_fmt(size*1024*1024)+' las partes ᨖ'
+                   msg = '➲ Genial los zips seran de '+ sizeof_fmt(size*1024*1024)+' las partes ᨖ'
                    bot.sendMessage(update.message.chat.id,msg)
                 except:
                    bot.sendMessage(update.message.chat.id,'➲ Error en el comando /zips size ✗')
@@ -471,7 +471,7 @@ def onmessage(update,bot:ObigramClient):
             return
         #end
 
-        message = bot.sendMessage(update.message.chat.id,'➲ Procesando ✪ ●●○')
+        message = bot.sendMessage(update.message.chat.id,'➲ Procesando ●●○')
 
         thread.store('msg',message)
 
@@ -507,7 +507,7 @@ def onmessage(update,bot:ObigramClient):
                  txtname = evindex['name']+'.txt'
                  sendTxt(txtname,evindex['files'],update,bot)
                  client.logout()
-                 bot.editMessageText(message,'TxT Aqui👇')
+                 bot.editMessageText(message,'➲ TxT Aqui')
              else:
                 bot.editMessageText(message,'➲ Error y Causas🧐\n1-Revise su Cuenta\n2-Servidor Desabilitado: '+client.path)
              pass
