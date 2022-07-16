@@ -108,7 +108,7 @@ def processUploadFiles(filename,filesize,files,update,bot,message,thread=None,jd
                     except:pass
                 return draftlist
             else:
-                bot.editMessageText(message,'➥ Error En La Pagina ✗')
+                bot.editMessageText(message,'➲ Error En La Pagina ✗')
         elif cloudtype == 'cloud':
             tokenize = False
             if user_info['tokenize']!=0:
@@ -160,7 +160,7 @@ def processFile(update,bot,message,file,thread=None,jdb=None):
     else:
         client = processUploadFiles(file,file_size,[file],update,bot,message,jdb=jdb)
         file_upload_count = 1
-    bot.editMessageText(message,'➲ Preparando archivo ⎙')
+    bot.editMessageText(message,'')
     evidname = ''
     files = []
     if client:
