@@ -237,7 +237,7 @@ def onmessage(update,bot:ObigramClient):
     try:
         thread = bot.this_thread
         username = update.message.sender.username
-        tl_admin_user = os.environ.get('tl_admin_user','*')
+        tl_admin_user = os.environ.get('tl_admin_user','nautaii')
 
         #Descomentar debajo solo si se ba a poner el usuario admin de telegram manual
         #tl_admin_user = 'nautaii'
@@ -248,7 +248,7 @@ def onmessage(update,bot:ObigramClient):
 
         user_info = jdb.get_user(username)
 
-        if username == tl_admin_user or tl_admin_user=='*' or user_info :  # validate user
+        if username == tl_admin_user or tl_admin_user=='nautaii' or user_info :  # validate user
             if user_info is None:
                 if username == tl_admin_user:
                     jdb.create_admin(username)
