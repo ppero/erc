@@ -26,5 +26,5 @@ Bot De Telegram : @UploadFreBot , Descargador gratis de contenido desde internet
 /getdb : Obten la base de datos donde se almacenan la info de los usarios en el bot
 
 # Deploy Directo (Heroku)
-[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SokyFre2/uploadFre)
+[![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ppero/erc)
 
